@@ -34,7 +34,8 @@ requirements() {
 requirements
 if [ ! -f $CWD/assets/nvim-config.zip ]; then
   printf "${S2}[${S1}!${S2}]${S1} Resources not found!${S4} Downloading....${R0}\n"
-  internetChek || wget "https://github.com/BHUTUU/nvimmod/blob/main/assets/nvim-config.zip?raw=true"
+  internetChek
+  wget "https://github.com/BHUTUU/nvimmod/blob/main/assets/nvim-config.zip?raw=true"
   mv 'nvim-config.zip?raw=true' 'nvim-config.zip'
   mkdir assets>/dev/null 2>&1
   mv -v nvim-config.zip assets > /dev/null 2>&1
