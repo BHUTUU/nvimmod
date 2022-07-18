@@ -40,7 +40,8 @@ if [ ! -f $CWD/assets/nvim-config.zip ]; then
   mkdir assets>/dev/null 2>&1
   mv -v nvim-config.zip assets > /dev/null 2>&1
 fi
-printf "${S2}\tEnter the index number in which you can see nvim manual or nvim auto${R0}\n"
+printf "${S2}\tEnter the index number in which you can see nvim manual or nvim auto when asked.${R0}\n"
+read -p "press enter to connection__" ent
 cd $CWD/assets>/dev/null 2>&1
 unzip nvim-config.zip
 cd nvim-config>/dev/null 2>&1
